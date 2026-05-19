@@ -1,6 +1,6 @@
 # 📡 TelcoCustomerChurn — Análisis Exploratorio de Datos
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://TU_APP.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://proyecto-telco-churn-analytics-tapia-paulo.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)](https://python.org)
 [![Pandas](https://img.shields.io/badge/Pandas-2.0-150458?logo=pandas)](https://pandas.pydata.org)
 
@@ -87,22 +87,46 @@ En la app, navega a **📂 Carga del Dataset** en el menú lateral y sube el arc
 
 ## 📸 Capturas de la Aplicación
 
-> *Agregar capturas una vez desplegada la aplicación.*
+**Captura 1 — Pantalla de inicio**
+![Captura 1](images/Screenshot%202026-05-18%20233541.png)
 
-![Home](images\Screenshot 2026-05-18 233541.png)
-![Home](images\Screenshot 2026-05-18 233600.png)
-![Home](images\Screenshot 2026-05-18 233613.png)
-![Home](images\Screenshot 2026-05-18 233622.png)
-![Home](images\Screenshot 2026-05-18 233632.png)
-![Home](images\Screenshot 2026-05-18 233643.png)
-![Home](images\Screenshot 2026-05-18 233705.png)
-![Home](images\Screenshot 2026-05-18 233725.png)
-![Home](images\Screenshot 2026-05-18 233755.png)
-![Home](images\Screenshot 2026-05-18 233812.png)
-![Home](images\Screenshot 2026-05-18 233835.png)
-![Home](images\Screenshot 2026-05-18 233850.png)
-![Home](images\Screenshot 2026-05-18 233915.png)
+**Captura 2 — Carga del dataset**
+![Captura 2](images/Screenshot%202026-05-18%20233600.png)
 
+**Captura 3 — Vista previa del CSV**
+![Captura 3](images/Screenshot%202026-05-18%20233613.png)
+
+**Captura 4 — EDA: Información general**
+![Captura 4](images/Screenshot%202026-05-18%20233622.png)
+
+**Captura 5 — EDA: Clasificación de variables**
+![Captura 5](images/Screenshot%202026-05-18%20233632.png)
+
+**Captura 6 — EDA: Estadísticas descriptivas**
+![Captura 6](images/Screenshot%202026-05-18%20233643.png)
+
+**Captura 7 — EDA: Variables numéricas**
+![Captura 7](images/Screenshot%202026-05-18%20233705.png)
+
+**Captura 8 — EDA: Variables categóricas**
+![Captura 8](images/Screenshot%202026-05-18%20233725.png)
+
+**Captura 9 — EDA: Análisis bivariado numérico**
+![Captura 9](images/Screenshot%202026-05-18%20233755.png)
+
+**Captura 10 — EDA: Análisis bivariado categórico**
+![Captura 10](images/Screenshot%202026-05-18%20233812.png)
+
+**Captura 11 — EDA: Exploración interactiva**
+![Captura 11](images/Screenshot%202026-05-18%20233835.png)
+
+**Captura 12 — EDA: Hallazgos principales**
+![Captura 12](images/Screenshot%202026-05-18%20233850.png)
+
+**Captura 13 — Conclusiones**
+![Captura 13](images/Screenshot%202026-05-18%20233915.png)
+
+---
 
 ## 📊 Módulos de la Aplicación
 
@@ -117,14 +141,14 @@ En la app, navega a **📂 Carga del Dataset** en el menú lateral y sube el arc
 
 ## 🔗 Links Relevantes
 
-- 🌐 **App desplegada:** [TU_APP.streamlit.app](https://proyecto-telco-churn-analytics-tapia-paulo.streamlit.app/)
-- 💻 **Repositorio GitHub:** [github.com/TU_USUARIO/TU_REPO](https://github.com/pamatalo05/proyecto-telco-churn-analytics)
+- 🌐 **App desplegada:** [proyecto-telco-churn-analytics-tapia-paulo.streamlit.app](https://proyecto-telco-churn-analytics-tapia-paulo.streamlit.app/)
+- 💻 **Repositorio GitHub:** [github.com/pamatalo05/proyecto-telco-churn-analytics](https://github.com/pamatalo05/proyecto-telco-churn-analytics)
 - 📦 **Dataset original:** [Kaggle — Telco Customer Churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 
 ---
 
 ## 👤 Autor
 
-**Nombre:** TU NOMBRE AQUÍ  
+**Nombre:** Paulo Tapia Loor
 **Especialización:** Python for Analytics — DMC Institute  
-**Año:** 2025
+**Año:** 2026
