@@ -89,6 +89,19 @@ En la app, navega a **📂 Carga del Dataset** en el menú lateral y sube el arc
 
 > *Agregar capturas una vez desplegada la aplicación.*
 
+![Home](images\Screenshot 2026-05-18 233541.png)
+![Home](images\Screenshot 2026-05-18 233600.png)
+![Home](images\Screenshot 2026-05-18 233613.png)
+![Home](images\Screenshot 2026-05-18 233622.png)
+![Home](images\Screenshot 2026-05-18 233632.png)
+![Home](images\Screenshot 2026-05-18 233643.png)
+![Home](images\Screenshot 2026-05-18 233705.png)
+![Home](images\Screenshot 2026-05-18 233725.png)
+![Home](images\Screenshot 2026-05-18 233755.png)
+![Home](images\Screenshot 2026-05-18 233812.png)
+![Home](images\Screenshot 2026-05-18 233835.png)
+![Home](images\Screenshot 2026-05-18 233850.png)
+![Home](images\Screenshot 2026-05-18 233915.png)
 
 
 ## 📊 Módulos de la Aplicación

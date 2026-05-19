@@ -1,5 +1,7 @@
 import pandas as pd
 import numpy as np
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import seaborn as sns
 from typing import Tuple, List
@@ -17,6 +19,8 @@ class DataAnalyzer:
         return numericas, categoricas
 
     def estadisticas_descriptivas(self) -> pd.DataFrame:
+        if not self.numericas:
+            return pd.DataFrame()
         desc = self.df[self.numericas].describe().T
         desc["mediana"] = self.df[self.numericas].median()
         desc["moda"] = self.df[self.numericas].mode().iloc[0]
@@ -30,10 +34,16 @@ class DataAnalyzer:
             "Nulos": nulos.values,
             "Porcentaje (%)": porcentaje.values
         })
-        tabla = tabla[tabla["Nulos"] > 0].sort_values("Nulos", ascending=False).reset_index(drop=True)
+        tabla = (
+            tabla[tabla["Nulos"] > 0]
+            .sort_values("Nulos", ascending=False)
+            .reset_index(drop=True)
+        )
         return tabla
 
     def tasa_churn_por_grupo(self, columna: str) -> pd.DataFrame:
+        if "Churn" not in self.df.columns:
+            return pd.DataFrame()
         tasa = (
             self.df.groupby(columna)["Churn"]
             .apply(lambda x: (x == "Yes").mean() * 100)
@@ -45,7 +55,9 @@ class DataAnalyzer:
 
     def resumen_general(self) -> str:
         filas, columnas = self.df.shape
-        churn_pct = round(self.df["Churn"].value_counts(normalize=True).get("Yes", 0) * 100, 2)
+        churn_pct = round(
+            self.df["Churn"].value_counts(normalize=True).get("Yes", 0) * 100, 2
+        )
         nulos = int(self.df.isnull().sum().sum())
         return (
             f"Dataset: {filas:,} filas · {columnas} columnas\n"
@@ -71,8 +83,10 @@ class DataAnalyzer:
     def graficar_barras(self, columna: str, palette: str = "Set2"):
         conteos = self.df[columna].value_counts()
         fig, ax = plt.subplots(figsize=(8, 4))
-        sns.barplot(x=conteos.index, y=conteos.values, ax=ax, palette=palette)
-        ax.bar_label(ax.containers[0], fmt="%d", padding=3)
+        sns.barplot(x=conteos.index, y=conteos.values, ax=ax, palette=palette, legend=False)
+        # Compatibilidad con versiones nuevas de seaborn
+        for container in ax.containers:
+            ax.bar_label(container, fmt="%d", padding=3)
         ax.set_title(f"Distribución de {columna}")
         ax.set_xlabel(columna)
         ax.set_ylabel("Cantidad")
