@@ -15,22 +15,34 @@ def _estilo():
     plt.rcParams["axes.spines.right"] = False
  
  
-def histograma_con_grupos(df: pd.DataFrame, columna: str):
-    _estilo()
-    fig, ax = plt.subplots(figsize=(9, 4))
-    for churn_val, color in PALETTE_CHURN.items():
-        subset = df[df["Churn"] == churn_val][columna].dropna()
-        ax.hist(subset, bins=30, alpha=0.55, color=color, label=f"Churn {churn_val}", density=True)
-        subset.plot.kde(ax=ax, color=color, linewidth=2)
-    media = df[columna].mean()
-    mediana = df[columna].median()
-    ax.axvline(media,   color="#333", linestyle="--", linewidth=1.4, label=f"Media: {media:.1f}")
-    ax.axvline(mediana, color="#888", linestyle=":",  linewidth=1.4, label=f"Mediana: {mediana:.1f}")
-    ax.set_title(f"Distribución de {columna} por Churn", fontsize=13, fontweight="bold", pad=12)
-    ax.set_xlabel(columna, fontsize=11)
-    ax.set_ylabel("Densidad", fontsize=11)
-    ax.legend(frameon=False, fontsize=9)
+def histograma_con_grupos(df, columna):
+
+    fig, ax = plt.subplots(figsize=(8, 4))
+
+    colores = {
+        "Yes": "#E85C4C",
+        "No": "#4C9BE8"
+    }
+
+    for churn, color in colores.items():
+
+        subset = df[df["Churn"] == churn][columna].dropna()
+
+        ax.hist(
+            subset,
+            bins=30,
+            alpha=0.5,
+            color=color,
+            label=f"Churn {churn}"
+        )
+
+    ax.set_title(f"Distribución de {columna}")
+    ax.set_xlabel(columna)
+    ax.set_ylabel("Frecuencia")
+    ax.legend()
+
     plt.tight_layout()
+
     return fig
  
  

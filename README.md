@@ -58,7 +58,7 @@ Durante el último mes, la empresa incrementó su tasa de churn en +0.5 puntos p
 
 **1. Clona el repositorio**
 ```bash
-git clone https://github.com/TU_USUARIO/TU_REPO.git
+git clone https://github.com/pamatalo05/proyecto-telco-churn-analytics
 cd TU_REPO
 ```
 
@@ -89,14 +89,7 @@ En la app, navega a **📂 Carga del Dataset** en el menú lateral y sube el arc
 
 > *Agregar capturas una vez desplegada la aplicación.*
 
-<!-- Ejemplo:
-![Home](assets/home.png)
-![Carga](assets/carga.png)
-![EDA](assets/eda.png)
-![Conclusiones](assets/conclusiones.png)
--->
 
----
 
 ## 📊 Módulos de la Aplicación
 
@@ -111,8 +104,8 @@ En la app, navega a **📂 Carga del Dataset** en el menú lateral y sube el arc
 
 ## 🔗 Links Relevantes
 
-- 🌐 **App desplegada:** [TU_APP.streamlit.app](https://TU_APP.streamlit.app)
-- 💻 **Repositorio GitHub:** [github.com/TU_USUARIO/TU_REPO](https://github.com/TU_USUARIO/TU_REPO)
+- 🌐 **App desplegada:** [TU_APP.streamlit.app](https://proyecto-telco-churn-analytics-tapia-paulo.streamlit.app/)
+- 💻 **Repositorio GitHub:** [github.com/TU_USUARIO/TU_REPO](https://github.com/pamatalo05/proyecto-telco-churn-analytics)
 - 📦 **Dataset original:** [Kaggle — Telco Customer Churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 
 ---
