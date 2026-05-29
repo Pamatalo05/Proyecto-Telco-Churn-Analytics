@@ -1,4 +1,4 @@
-# 📡 TelcoCustomerChurn — Análisis Exploratorio de Datos
+# 📡 Telco Customer Churn Analytics Dashboard
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://proyecto-telco-churn-analytics-tapia-paulo.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)](https://python.org)
@@ -6,14 +6,13 @@
 
 ---
 
-## 📋 Descripción del Proyecto
+## Descripción del Proyecto
 
 Este proyecto es una aplicación interactiva construida con **Streamlit** que realiza un **Análisis Exploratorio de Datos (EDA)** sobre el dataset `TelcoCustomerChurn.csv`.
 
 El objetivo es identificar patrones asociados a la **fuga de clientes** (*churn*) en una empresa de telecomunicaciones, aplicando técnicas de visualización y estadística descriptiva. El enfoque es completamente **exploratorio**, sin desarrollo de modelos predictivos.
 
-Durante el último mes, la empresa incrementó su tasa de churn en +0.5 puntos porcentuales debido al contexto del COVID-19. Dado que adquirir un nuevo cliente cuesta entre 6 y 7 veces más que retener uno existente, comprender las causas del abandono es una prioridad estratégica.
-
+El proyecto busca identificar patrones asociados a la fuga de clientes mediante análisis exploratorio, visualización y exploración interactiva de datos.
 ---
 
 ## 🎯 Objetivos Específicos
@@ -26,7 +25,7 @@ Durante el último mes, la empresa incrementó su tasa de churn en +0.5 puntos p
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 | Herramienta | Versión | Uso |
 |---|---|---|
@@ -38,6 +37,12 @@ Durante el último mes, la empresa incrementó su tasa de churn en +0.5 puntos p
 | Seaborn | ≥ 0.13 | Visualización estadística |
 
 ---
+
+## Key Insights
+
+- Clientes con menor permanencia presentan mayores tasas de churn
+- Determinados contratos presentan mayor riesgo de abandono
+- Monthly Charges muestra patrones diferenciados entre grupos
 
 ## 📁 Estructura del Proyecto
 
@@ -59,7 +64,7 @@ Durante el último mes, la empresa incrementó su tasa de churn en +0.5 puntos p
 **1. Clona el repositorio**
 ```bash
 git clone https://github.com/pamatalo05/proyecto-telco-churn-analytics
-cd TU_REPO
+cd Proyecto-Telco-Churn-Analytics
 ```
 
 **2. Crea un entorno virtual**
@@ -139,7 +144,7 @@ En la app, navega a **📂 Carga del Dataset** en el menú lateral y sube el arc
 
 ---
 
-## 🔗 Links Relevantes
+## 🔗 Links 
 
 - 🌐 **App desplegada:** [proyecto-telco-churn-analytics-tapia-paulo.streamlit.app](https://proyecto-telco-churn-analytics-tapia-paulo.streamlit.app/)
 - 💻 **Repositorio GitHub:** [github.com/pamatalo05/proyecto-telco-churn-analytics](https://github.com/pamatalo05/proyecto-telco-churn-analytics)
